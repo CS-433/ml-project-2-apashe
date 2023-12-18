@@ -16,7 +16,7 @@ Group Name: APASHE
 
 ## Files and Structure
 
-Since we explore three different NLP techniques within this project, we dedicate a subfolder for each method (namely Word embeddings, TF-IDF and Transformers) having a `plots.ipynb` that generate their corresponding plots. In the main folder of the repository.The structure of the folder is the following:
+Since we explore three different NLP techniques within this project, we dedicate a subfolder for each method (namely Word embeddings, TF-IDF and Transformers) having a `plots.ipynb` that generate their corresponding plots. The structure of the folder is the following:
 
 ```
 ML-PROJECT2-2-APASHE/
@@ -46,9 +46,9 @@ ML-PROJECT2-2-APASHE/
 ```
 
 The most important files are the following:
-1. `run.ipynb`: This Jupyter Notebook imports a pretrained model, applies it to the dataset, and creates a CSV file suitable for submission on AI Crowd
+1. `run.ipynb`: This Jupyter Notebook imports our best model (BERTweet) with its weights, applies it to the dataset, and creates a CSV file suitable for submission on AI Crowd
 
-2. `train.ipynb`: This Jupyter Notebook is dedicated to training our best working model. It creates a txt file that can then be imported in run.ipynb.
+2. `train.ipynb`: This Jupyter Notebook is dedicated to training our best working model. It creates a txt file that can then be imported in `run.ipynb`.
 
 3. `helpers.py`: This Python script contains useful functions used throughout the project.
 
