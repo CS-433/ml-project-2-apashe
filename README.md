@@ -16,7 +16,7 @@ Group Name: APASHE
 
 ## Files and Structure
 
-Since we explore three different NLP techniques within this project, we dedicate a subfolder for each method (namely Word embeddings, TF-IDF and Transformers) having a `plots.ipynb` that generate the corresponding plots. In the main folder of the repository.The structure of the folder is the following:
+Since we explore three different NLP techniques within this project, we dedicate a subfolder for each method (namely Word embeddings, TF-IDF and Transformers) having a `plots.ipynb` that generate their corresponding plots. In the main folder of the repository.The structure of the folder is the following:
 
 ```
 ML-PROJECT2-2-APASHE/
