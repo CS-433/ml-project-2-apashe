@@ -16,6 +16,7 @@ from torch.optim import AdamW
 
 from tqdm import tqdm
 from tqdm.auto import tqdm
+import matplotlib.pyplot as plt
 
 import pandas as pd
 import time
@@ -195,7 +196,7 @@ def normalizeTweets(df_test):
     return df_test
 
 
-def tokenizeTweets(checkpoint,df,mode):
+def tokenizeTweets(checkpoint,df,mode,seed=4):
     # Create Dataset instance
     dataset_ = Dataset.from_pandas(df)
 
@@ -345,3 +346,46 @@ def train(model_classfier,train_dataloader,eval_dataloader,device):
             best_weights = model_classfier.state_dict()
 
     return best_weights
+
+def plot_TF_IDF_results (dfResults, val_opt, fixed_param, var_param) :
+    """
+    Plot TF-IDF hyperparameter search results
+
+    params :
+        dfResults : pandas dataframe containing the results of the hyperparameter search
+        val_opt : optimal value for either max_df or min_df
+        fixed_param : string indicating which of min_df or max_df is the fixed parameter 
+                      for which we're doing the plots
+        var_param : string indicating which of min_df or max_df is the variable parameter 
+                    for which we're doing the plots
+    """
+    
+
+    # Collect results corresponding to val_opt
+    dfResults_trunc = dfResults[dfResults[fixed_param] == val_opt].copy()
+
+    # Extract unique values corresponding to the string fixed param
+    vals = dfResults_trunc[var_param].unique()
+
+    # Plotting
+    for val in vals:
+
+        # Filter results for the specified parameter
+        lambda_values = (dfResults_trunc[dfResults_trunc[var_param] == val])['Lambda'].copy().values
+        accuracy_values = (dfResults_trunc[dfResults_trunc[var_param] == val])['Accuracy'].copy().values
+
+        indices = np.argsort(lambda_values)
+        lambda_values = lambda_values[indices]
+        accuracy_values = accuracy_values[indices]
+
+        # Plotting for each variable parameter value
+        plt.plot(lambda_values, accuracy_values, linewidth = 1 , marker='o', linestyle='-', label=f"{var_param} = {val}")
+
+    # Plot details
+    plt.title(f'Accuracy vs Lambda for {fixed_param} = {val_opt}')
+    plt.xlabel('Lambda')
+    plt.xscale('log')
+    plt.ylabel('Accuracy')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
