@@ -196,7 +196,7 @@ def normalizeTweets(df_test):
     return df_test
 
 
-def tokenizeTweets(checkpoint,df,mode):
+def tokenizeTweets(checkpoint,df,mode,seed=4):
     # Create Dataset instance
     dataset_ = Dataset.from_pandas(df)
 
