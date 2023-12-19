@@ -27,16 +27,22 @@ ML-PROJECT2-2-APASHE/
 │ ├── train_pos.txt
 │ └── train_pos_full.txt
 ├── submissions/
+│ └── submission.csv
 ├── weights/
-├── word_embeddings/
-│ ├── cooc_files/
-│ ├── encoded_dfs/
-│ ├── saved_results/
-│ ├── vocab_cut_files/
-│ ├── vocab_full_files/
-│ ├── vocab_pkl_files/
-│ └── word_embeddings_plots.ipynb
-├── tf_idf/
+├── plots/
+│ ├── word_embeddings/
+│ │ ├── cooc_files/
+│ │ ├── encoded_dfs/
+│ │ ├── saved_results/
+│ │ ├── vocab_cut_files/
+│ │ ├── vocab_full_files/
+│ │ ├── vocab_pkl_files/
+│ │ └── word_embeddings_plots.ipynb
+│ ├── tf_idf/
+│ │ └── tf_idf_plots.ipynb
+│ ├── transformers/
+│ │ └── transformers_plots.ipynb
+│ └──overall_plots.ipynb
 ├── run.ipynb
 ├── train.ipynb
 ├── plots.ipynb
