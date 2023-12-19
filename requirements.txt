@@ -12,3 +12,4 @@ evaluate
 matplotlib
 plotly
 nbformat
+seaborn
