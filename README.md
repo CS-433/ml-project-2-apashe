@@ -29,6 +29,9 @@ ML-PROJECT2-2-APASHE/
 ├── submissions/
 │ └── submission.csv
 ├── weights/
+│ └── best_model_weights_1.pt
+│ └── best_model_weights_2.pt
+│ └── best_model_weights_3.pt
 ├── plots/
 │ ├── word_embeddings/
 │ │ ├── cooc_files/
