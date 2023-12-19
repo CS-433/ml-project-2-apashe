@@ -16,7 +16,7 @@ Group Name: APASHE
 
 ## Files and Structure
 
-Since we explore three different NLP techniques within this project, we dedicate a subfolder for each method (namely Word embeddings, TF-IDF and Transformers) having a `plots.ipynb` that generate their corresponding plots. The structure of the folder is the following:
+The structure of the folder is the following:
 
 ```
 ML-PROJECT2-2-APASHE/
@@ -51,18 +51,22 @@ ML-PROJECT2-2-APASHE/
 └── README.md
 ```
 
-The most important files are the following:
+The most important files and folders are the following:
 1. `run.ipynb`: This Jupyter Notebook imports our best model (BERTweet) with its weights, applies it to the dataset, and creates a CSV file suitable for submission on AI Crowd
 
 2. `train.ipynb`: This Jupyter Notebook is dedicated to training our best working model. It creates a txt file that can then be imported in `run.ipynb`.
 
 3. `helpers.py`: This Python script contains useful functions used throughout the project.
 
-4. `plots.ipynb`: This Jupyter Notebook is used to generate relevant plots related to the final method for the project report. It includes hyperparameter search plots and plots for an ablation study. The different plots are seperated by markdowns.
+4. `plots`: Since we explore three different NLP techniques within this project, we dedicate a subfolder for each method (namely Word embeddings, TF-IDF and Transformers) having a `plots.ipynb` that generate their corresponding plots. these plots includes hyperparameter search plots, plots for model comparison and plots for visualization.
 
 ## Data
 
 The project data should be put in the folder called `data`. You can download the dataset from the following URL: [ML_course repository on GitHub](https://github.com/epfml/ML_course).
+
+## Weights
+
+Since the best model was achieved Employing an ensemble of the three best BERTweet models, the weights of these three models need to be downloaded. The weights can be downloaded from [here](https://drive.google.com/drive/folders/1O6vY0ZJwj5IZE-NlFzyauW-a58AkrWao?usp=sharing). Each weight file is approximately 527MB in size, totaling 1.581GB for all three models. Once downloaded, place each weight file into the `weights` folder of your project directory.
 
 
 ## Running the Code
@@ -77,8 +81,8 @@ conda activate ml-project
 conda install -r requirements.txt
 ```
 
-2. If you only want to test our model. We have already generated a ready to use `w.txt` file that contains our pretrained model obtained from ridge regression. You can obtain the csv file by running the file `run.ipynb`, you then have to submit this file on aicrowd to get the accuracy on the testing set. Make sure to run all the blocks in order.
+2. If you only want to test our model, you can use an ensemble of the existing weights of the best 3 BERTweet pretrained models. Obtain the prediction file by running the file run.ipynb. Ensure you run all the blocks in order. Submit this file on aicrowd to get the accuracy on the testing set.
 
 2. If you want to train the model yourself, open and run the `train.ipynb` notebook. Make sure to run all the blocks in order. After training, you can use the pretrained model by opening and running the `run.ipynb` notebook to create a submission file for AI Crowd.
 
-4. Use the `plots.ipynb` notebook to generate relevant plots for your project report, such as hyperparameter search and ablation study plots.
+4. Use the `plots` folder to generate relevant plots.
