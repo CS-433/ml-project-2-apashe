@@ -79,7 +79,7 @@ To run the code in this project, follow these steps:
 1. Make sure you have the necessary libraries (numpy, and matplotlib), installed in your Python environment. You can set up a Conda environment with the required libraries using the following steps:
 
 ```bash
-conda create --name ml-project python=3.8
+conda create --name ml-project python=3.9
 conda activate ml-project
 conda install -r requirements.txt
 ```
