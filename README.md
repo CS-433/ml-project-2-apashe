@@ -62,7 +62,7 @@ The most important files and folders are the following:
 
 ## Data
 
-The project data should be put in the folder called `data`. You can download the dataset from the following URL: [ML_course repository on GitHub](https://github.com/epfml/ML_course).
+The project data should be put in the folder called `data`. You can download the dataset from the following URL: [aicrowd text classification challenge dataset](https://www.aicrowd.com/challenges/epfl-ml-text-classification/dataset_files).
 
 ## Weights
 
