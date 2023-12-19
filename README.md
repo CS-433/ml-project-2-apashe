@@ -26,12 +26,6 @@ ML-PROJECT2-2-APASHE/
 │ ├── train_neg_full.txt
 │ ├── train_pos.txt
 │ └── train_pos_full.txt
-├── submissions/
-│ └── submission.csv
-├── weights/
-│ └── best_model_weights_1.pt
-│ └── best_model_weights_2.pt
-│ └── best_model_weights_3.pt
 ├── plots/
 │ ├── word_embeddings/
 │ │ ├── cooc_files/
@@ -46,6 +40,12 @@ ML-PROJECT2-2-APASHE/
 │ ├── transformers/
 │ │ └── transformers_plots.ipynb
 │ └──overall_plots.ipynb
+├── submissions/
+│ └── submission.csv
+├── weights/
+│ └── best_model_weights_1.pt
+│ └── best_model_weights_2.pt
+│ └── best_model_weights_3.pt
 ├── run.ipynb
 ├── train.ipynb
 ├── plots.ipynb
