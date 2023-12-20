@@ -39,7 +39,7 @@ ML-PROJECT2-2-APASHE/
 │ │ └── tf_idf_plots.ipynb
 │ ├── transformers/
 │ │ └── transformers_plots.ipynb
-│ └──overall_plots.ipynb
+│ └──general_plots.ipynb
 ├── submissions/
 │ └── submission.csv
 ├── weights/
