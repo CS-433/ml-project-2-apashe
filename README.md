@@ -26,12 +26,6 @@ ML-PROJECT2-2-APASHE/
 │ ├── train_neg_full.txt
 │ ├── train_pos.txt
 │ └── train_pos_full.txt
-├── submissions/
-│ └── submission.csv
-├── weights/
-│ └── best_model_weights_1.pt
-│ └── best_model_weights_2.pt
-│ └── best_model_weights_3.pt
 ├── plots/
 │ ├── word_embeddings/
 │ │ ├── cooc_files/
@@ -46,6 +40,12 @@ ML-PROJECT2-2-APASHE/
 │ ├── transformers/
 │ │ └── transformers_plots.ipynb
 │ └──overall_plots.ipynb
+├── submissions/
+│ └── submission.csv
+├── weights/
+│ └── best_model_weights_1.pt
+│ └── best_model_weights_2.pt
+│ └── best_model_weights_3.pt
 ├── run.ipynb
 ├── train.ipynb
 ├── plots.ipynb
@@ -79,7 +79,7 @@ To run the code in this project, follow these steps:
 1. Make sure you have the necessary libraries (numpy, and matplotlib), installed in your Python environment. You can set up a Conda environment with the required libraries using the following steps:
 
 ```bash
-conda create --name ml-project python=3.8
+conda create --name ml-project python=3.9
 conda activate ml-project
 conda install -r requirements.txt
 ```
